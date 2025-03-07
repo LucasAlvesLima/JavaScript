@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>vc é uma pessoa estrangeira ou não </h1>
+    escreva seu pais <input type="text" name="txtv" id="txtv">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+    function verificar(){
+        var tx = window.document.getElementById('txtv')
+        var re = window.document.getElementById('res')
+        var ver = String(txtv.value)
+        
+        if (ver == 'Brasil') {
+            re.innerHTML = ` é brasileira <br>`
+        } else {
+            re.innerHTML += ` é estrangeira`
+        }
+    }
+    </script>
+</body>
+</html>
